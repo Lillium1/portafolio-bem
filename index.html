@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portafolio BEM::Ejercicio Evaluado</title>
-	<!-- Iconos -->
+	<title>Portafolio BEM :: Ejercicio Evaluado</title>
+	<!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+	<!-- Tipgrafia -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<!-- Link archivo css-->
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -16,11 +17,11 @@
 		<ul class="menu">
 			<li class="menu__item">
 				<a href="#" class="menu__item__link">
-					<img src="img/perfil.jpg" alt="" class="menu__img">
+					<img src="img/perfil.jpg" alt="" >
 				</a>
 			</li>
 			<li class="menu__item">
-				<a href="#" class="menu__item__link btn btn--menu"><i class="fa fa-user" aria-hidden="true"></i> PROFILE</a>
+				<a href="#" class="menu__item__link menu__item--btn--perfil"><i class="fa fa-user" aria-hidden="true"></i> PROFILE</a>
 			</li>
 			<li class="menu__item">
 				<a href="#" class="menu__item__link"><i class="fa fa-trophy" aria-hidden="true"></i> SKILLS</a>
@@ -34,29 +35,55 @@
 		</ul>
 	</header>
 
-	<section>
+	<section id="contenido">
 		<div class="article">
-			<img src="img/foto.jpg" alt="" class="article__img">
-			<h2 class="article__title">Paulina González Castro</h2>
-			<h4 class="article__subtitle">Web & Graphics Designer</h4>
-			<p class="article__parrafo--left">Hello I am Paulina González Castro Web and Graphics Designer from Chile. If you have something to be done just call my name and I will be there ;)</p>
-			<a href="#" class="article__link btn btn--menu"><i class="fa fa-paper-plane" aria-hidden="true"></i> HIRE ME</a>
+			<div class="article__left">
+				<img src="img/foto.jpg" alt="">
+			</div>
+			<div class="article__right">
+				<h2 class="article__right--title">Paulina González Castro</h2>
+				<h4 class="article__right--subtitulo">Web & Graphics Designer</h4>
+				<p class="article__right--parrafo">Hello I am Paulina González Castro Web and Graphics Designer from Chile. If you have something to be done just call my name and I will be there ;)</p>
+				<a href="#" class="article__right--btn"><i class="fa fa-paper-plane" aria-hidden="true"></i> HIRE ME</a>
+			</div>
 		</div>
 		<div class="red-social">
 			<ul class="red-social__lista">
-				<li><a href="#" class="red-social__lista--facebook"></a><i class="fa fa-facebook" aria-hidden="true"></i></li>
-				<li><a href="#" class="red-social__lista--twuitter"></a><i class="fa fa-twitter" aria-hidden="true"></i></li>
-				<li><a href="#" class="red-social__lista--google"></a><i class="fa fa-google" aria-hidden="true"></i></li>
-				<li><a href="#" class="red-social__lista--pinterest"></a><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
-				<li><a href="#" class="red-social__lista--stumbleupon"></a><i class="fa fa-stumbleupon" aria-hidden="true"></i></li>
-				<li><a href="#" class="red-social__lista--dribble"></a><i class="fa fa-dribbble" aria-hidden="true"></i></li>
+				<li><a href="#" class="red-social__lista--facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#" class="red-social__lista--twuitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#" class="red-social__lista--google"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+				<li><a href="#" class="red-social__lista--pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+				<li><a href="#" class="red-social__lista--stumbleupon"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+				<li><a href="#" class="red-social__lista--dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
 	</section>
+	
+	<section id="extra">
+		<div class="services">
+			<div class="services__info">
+				<h2>Services</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque omnis harum vero molestias quod, sunt illum, quam facilis commodi blanditiis temporibus recusandae voluptatibus mollitia esse officiis asperiores. Consequatur, fuga, accusamus!</p>
+			</div>
+			<div class="work">
+				<div class="work__proyecto">
+					<img src="img/trabajo1.png" alt="" >
+					<h4>USER INTEFACE DESIGN</h4>
+				</div>
+				<div class="work__proyecto">
+					<img src="img/trabajo2.png" alt="" >
+					<h4>CONCEPT AND IDEAS</h4>
+				</div>
+				<div class="work__proyecto">
+					<img src="img/trabajo3.png" alt="" >
+					<h4>DESIGN AND BRANDING</h4>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<footer class="pie">
-		<p class="pie__item--center">Create by Lillium1~
-		</p>
+	<footer>
+		<p>Create by Lillium1~</p>
 	</footer>
 </body>
 </html>
